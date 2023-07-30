@@ -1,0 +1,43 @@
+/* styles.css */
+.row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-right: 20px; /* Add spacing between image and text containers */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add a border radius to create a curve on the image */
+  }
+  
+  .text-container {
+    flex: 2;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .text-container {
+      font-size: 14px;
+    }
+  
+    .image-container {
+      margin-right: 0; /* Remove the margin between image and text for smaller screens */
+      margin-bottom: 20px; /* Add margin below the image for spacing */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .text-container {
+      font-size: 12px;
+    }
+  }
+  
